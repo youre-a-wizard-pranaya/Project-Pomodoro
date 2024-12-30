@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <script src= refine.js defer></script>  
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f9;
+        }
+        .timer {
+            text-align: center;
+        }
+        .timer h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .timer button {
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .timer button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="timer">
+        <h1 id="timer-display">25:00</h1>
+        <button id="start-stop" onclick="toggleTimer()">Start</button>
+    </div>    
+
+</body>
+</html>
